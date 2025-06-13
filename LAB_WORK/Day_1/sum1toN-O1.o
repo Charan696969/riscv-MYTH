@@ -1,3 +1,4 @@
+//setting: -O1
 //compiled using riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1toN.o sum1toN.c
 //Used command: riscv64-unknown-elf-objdump -d sum1toN.o | less
 //searched for "main"
