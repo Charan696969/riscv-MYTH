@@ -1,0 +1,4 @@
+// ran using ./rv32im.sh
+//Terminal Output: 
+Sum of number from 1 to 3 is 6
+TRAP
