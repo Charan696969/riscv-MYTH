@@ -1,0 +1,11 @@
+//compiled using: riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o SignedMaxAndMin.o SignedMaxAndMin.c
+//ran using spike pk SignedMaxAndMin.o
+//Terminal Output:
+
+bbl loader
+Highest signed 64-bit number is -9223372036854775808.
+Lowest signed 64-bit number is 9223372036854775807.
+
+//The bug in the original code is in the typecasting. The value must be type-cast to long long int which is 16-byte
+//but instead it was type-cast into int which was only 4 byte - thus the wrong max and min values were
+//printed.
