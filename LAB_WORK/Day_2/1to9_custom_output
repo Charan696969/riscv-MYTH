@@ -1,0 +1,5 @@
+//compiled using: riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o 1to9_custom.o 1to9_custom.c load_function.s
+//ran using: spike pk 1to9_custom.o
+//Terminal Output:
+bbl loader
+Sum of numbers from 1 to 9 is 45. 
