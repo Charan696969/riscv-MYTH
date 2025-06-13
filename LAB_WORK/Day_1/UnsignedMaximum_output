@@ -1,0 +1,6 @@
+//compiled using: riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o UnsignedMaximum.o UnsignedMaximum.c
+//ran using: spike pk UnsignedMaximum.o
+
+//Terminal Output:
+bbl loader
+Longest 64-bit unsigned number(unsigned long long) is 18446744073709551
