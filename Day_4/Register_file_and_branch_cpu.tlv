@@ -39,7 +39,6 @@
 
    |cpu
       @0
-         //PC_Logic
          $reset = *reset;
          $pc[31:0] = (>>1$reset) ? 32'd0 : (>>1$taken_br ? >>1$br_tgt_pc : >>1$pc + 32'd4);
          $imem_rd_en = !$reset;
@@ -93,7 +92,6 @@
          $is_bgeu = $dec_bits ==? 11'bx_111_1100011;
          $is_addi = $dec_bits ==? 11'bx_000_0010011;
          $is_add = $dec_bits ==? 11'b0_000_0110011;
-                                     
          //Register_reads
          $rf_rd_en1 = $rs1_valid;
          $rf_rd_index1[4:0] = $rs1;
@@ -119,6 +117,7 @@
                                    $is_bgeu ? ($src1_value >= $src2_value) : 32'b0) : 32'b0;
          
          $br_tgt_pc[31:0] = $pc + $imm;
+         *passed = |cpu/xreg[10]>>5$value == (1+2+3+4+5+6+7+8+9);
       
 
       // Note: Because of the magic we are using for visualisation, if visualisation is enabled below,
@@ -127,7 +126,7 @@
 
    
    // Assert these to end simulation (before Makerchip cycle limit).
-   *passed = *cyc_cnt > 40;
+   
    *failed = 1'b0;
    
    // Macro instantiations for:
@@ -143,3 +142,4 @@
    m4+cpu_viz(@4)    // For visualisation, argument should be at least equal to the last stage of CPU logic. @4 would work for all labs.
 \SV
    endmodule
+
