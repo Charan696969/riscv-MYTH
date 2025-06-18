@@ -35,17 +35,20 @@ Over **5 days**, I explored and implemented key concepts in RISC-V microprocesso
 ## 📷 Output Snapshots
 
 ### 🧱 RTL Block View
-<img src="assets/final_cpu_rtl.png" width="700"/>
+![image](https://github.com/user-attachments/assets/33573eb1-7120-40ef-916b-fed38272f1c0)
+
 
 ---
 
 ### 🔍 Waveform Output - Part 1
-<img src="assets/waveform_1.png" width="1000"/>
+![image](https://github.com/user-attachments/assets/613b6ca5-3f30-43da-9f2b-a737f5848999)
+
 
 ---
 
 ### 🔍 Waveform Output - Part 2
-<img src="assets/waveform_2.png" width="1000"/>
+![image](https://github.com/user-attachments/assets/3cd9e8d2-1852-42a0-b8ad-23470cc7f8f9)
+
 
 ---
 
@@ -53,9 +56,9 @@ Over **5 days**, I explored and implemented key concepts in RISC-V microprocesso
 
 ```bash
 riscv-MYTH/
-├── Day_1/                # ISA + Formats
-├── Day_2/                # TL-Verilog Basics
-├── Day_3/                # Instruction Fetch Logic
-├── Day_4/                # Decode + ALU Control
-├── Day_5/                # Final Pipeline + Hazard Handling
-└── final_project/        # Completed CPU Design
+├── Day_1/                # ISA + Basics
+├── Day_2/                # Using spike and gcc on Ubuntu terminal
+├── Day_3/                # TL-Verilog Sequential, Combinational and Pipelined logic
+├── Day_4/                # RISC-V CPU Basics - Fetch and Decode
+├── Day_5/                # Pipelining, handling hazards, stalls for branches and jumps
+└── final_cpu.tlv       # Completed CPU Design
