@@ -11,7 +11,7 @@
 
 ## 🧠 What I Learned
 
-Over **5 intensive days**, I explored and implemented key concepts in RISC-V microprocessor design. Here's what I mastered:
+Over **5 days**, I explored and implemented key concepts in RISC-V microprocessor design:
 
 | Day | Topics Covered |
 |-----|----------------|
@@ -23,19 +23,39 @@ Over **5 intensive days**, I explored and implemented key concepts in RISC-V mic
 
 ---
 
-## 🔧 Project Highlights
+## 🔧 Final Project Overview
 
-📌 **Implemented a Fully Functional Pipelined RISC-V CPU**  
-📌 **Used TL-Verilog for structured, modular hardware design**  
-📌 **Simulated and tested in Makerchip IDE with real RISC-V programs**  
-📌 **Handled control & data hazards with forwarding and stalling logic**  
-📌 **Built Instruction Fetch, Decode, Execute, Memory, Write-Back stages**
+✔️ **Built a Pipelined RISC-V CPU in TL-Verilog**  
+✔️ **Handled Hazards using Forwarding/Bypassing**  
+✔️ **Verified using Waveform Simulations on Makerchip**  
+✔️ **Visualized RTL Structure & Execution Flow**
 
 ---
 
-## 📷 Sneak Peek
+## 📷 Output Snapshots
 
-> ✨ *Here you can include screenshots of Makerchip waveform outputs or code views*  
-> 📸 Just drag your screenshots here or use the following markdown:
-```markdown
-![Pipeline Screenshot](assets/pipeline_view.png)
+### 🧱 RTL Block View
+<img src="assets/final_cpu_rtl.png" width="700"/>
+
+---
+
+### 🔍 Waveform Output - Part 1
+<img src="assets/waveform_1.png" width="1000"/>
+
+---
+
+### 🔍 Waveform Output - Part 2
+<img src="assets/waveform_2.png" width="1000"/>
+
+---
+
+## 📁 Repository Layout
+
+```bash
+riscv-MYTH/
+├── Day_1/                # ISA + Formats
+├── Day_2/                # TL-Verilog Basics
+├── Day_3/                # Instruction Fetch Logic
+├── Day_4/                # Decode + ALU Control
+├── Day_5/                # Final Pipeline + Hazard Handling
+└── final_project/        # Completed CPU Design
